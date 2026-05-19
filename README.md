@@ -113,18 +113,14 @@ epochs = 300
 
 ### 4.1 软光栅化
 
-使用Sigmoid函数在边界产生平滑梯度：
-
-$$A(d) = \sigma\left(\frac{d}{\text{blur\_radius}}\right)$$
+使用公式 $A(d)=\sigma\left(\frac{d}{\text{blur\_radius}}\right)$ 计算透明度。
 
 避免了硬光栅化的梯度消失问题。
 
 ### 4.2 网格正则化
 
 **拉普拉斯平滑**：
-$$
-A(d) = \sigma\left(\frac{d}{\text{blur\_radius}}\right)
-$$
+$$L_{lap} = \sum_{i} \left\| v_i - \frac{1}{|N(i)|}\sum_{j \in N(i)} v_j \right\|^2$$
 
 防止表面出现尖刺和噪声。
 
