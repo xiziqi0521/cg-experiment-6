@@ -101,8 +101,7 @@ epochs = 300
 
 <img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/096352f1-d0a9-480e-93b4-1750eb4a1558" />
 
-<img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/d04c7a59-fad2-4484-b92a-2c10ab1d0ac2" />
-
+<img width="1325" height="554" alt="image" src="https://github.com/user-attachments/assets/d86476f7-cebf-4f30-abbe-281720a0b22c" />
 从结果可见：
 1. 形状完全贴合目标牛的轮廓
 2. 光影过渡自然，表面平滑
@@ -123,7 +122,9 @@ $$A(d) = \sigma\left(\frac{d}{\text{blur\_radius}}\right)$$
 ### 4.2 网格正则化
 
 **拉普拉斯平滑**：
-$$L_{lap} = \sum_{i} \left\| v_i - \frac{1}{|N(i)|}\sum_{j \in N(i)} v_j \right\|^2$$
+$$
+A(d) = \sigma\left(\frac{d}{\text{blur\_radius}}\right)
+$$
 
 防止表面出现尖刺和噪声。
 
