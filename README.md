@@ -53,12 +53,12 @@ epochs = 300
 - 收敛更稳定，无震荡
 - 形状更光滑
 - Epoch 499/500
-   Total Loss:      0.004449
-   Silhouette Loss: 0.001038
-   Laplacian Loss:  0.003592
-   Edge Loss:       0.002787
-   Normal Loss:     0.025821
-   Learning Rate:   0.000000
+- Total Loss:      0.004449
+- Silhouette Loss: 0.001038
+- Laplacian Loss:  0.003592
+- Edge Loss:       0.002787
+- Normal Loss:     0.025821
+- Learning Rate:   0.000000
   <img width="1040" height="490" alt="image" src="https://github.com/user-attachments/assets/b1d36a21-9add-428f-9172-ffbfd0c7130a" />
 <img width="1589" height="490" alt="image" src="https://github.com/user-attachments/assets/fa69e009-f8fd-40ab-a5f1-2e7ab4187e7b" />
 
@@ -99,10 +99,9 @@ epochs = 300
 - **RGB Loss**: 0.003 (颜色高度一致)
 - **Silhouette Loss**: 0.002 (形状精准)
 
-![三阶段训练Loss曲线](<img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/096352f1-d0a9-480e-93b4-1750eb4a1558" />
-)
-![最终RGB对比](<img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/d04c7a59-fad2-4484-b92a-2c10ab1d0ac2" />
-)
+<img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/096352f1-d0a9-480e-93b4-1750eb4a1558" />
+
+<img width="1364" height="1389" alt="image" src="https://github.com/user-attachments/assets/d04c7a59-fad2-4484-b92a-2c10ab1d0ac2" />
 
 从结果可见：
 1. 形状完全贴合目标牛的轮廓
@@ -116,6 +115,7 @@ epochs = 300
 ### 4.1 软光栅化
 
 使用Sigmoid函数在边界产生平滑梯度：
+
 $$A(d) = \sigma\left(\frac{d}{\text{blur\_radius}}\right)$$
 
 避免了硬光栅化的梯度消失问题。
