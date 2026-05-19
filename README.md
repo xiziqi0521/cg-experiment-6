@@ -112,8 +112,9 @@ epochs = 300
 ## 四、关键技术点
 
 ### 4.1 软光栅化
-
+$$
 A(d)=\sigma\left(\frac{d}{\mathrm{blur\_radius}}\right)
+$$
 
 避免了硬光栅化的梯度消失问题。
 
