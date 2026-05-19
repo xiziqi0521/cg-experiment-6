@@ -113,7 +113,7 @@ epochs = 300
 
 ### 4.1 软光栅化
 
-使用公式 $A(d)=\sigma\left(\frac{d}{\text{blur\_radius}}\right)$ 计算透明度。
+A(d)=\sigma\left(\frac{d}{\mathrm{blur\_radius}}\right)
 
 避免了硬光栅化的梯度消失问题。
 
